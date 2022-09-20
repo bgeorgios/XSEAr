@@ -1,4 +1,9 @@
 mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
+  # z = numeric vector of data (typically annual maxima values)
+  # init.mu = initial value for mu parameter
+  # init.sigma = initial value for sigma parameter
+  # init.xi = initial value for xi parameter
+  # sim = number of MCMC iterations (default = 10,000)
   
   # return log-likelihood of the 3-parameter GEV distribution
   logLikeGEV <- function(mu, sigma, xi) {
