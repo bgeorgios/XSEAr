@@ -9,6 +9,7 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
   
   # get number of data values
   n <- length(z)
+  
   # construct empty arrays to store MCMC iterations
   imu <- array(0, sim)
   isigma <- array(0, sim)
@@ -26,6 +27,7 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
   
   for (i in 2:sim) {
     
+    # random walk proposals
     mu.new <- imu[i - 1] + rnorm(1, mean = 0, sd = 0.1)
     sigma.new <- isigma[i - 1] + rnorm(1, mean = 0, sd = 0.1)
     xi.new <- ixi[i - 1] + rnorm(1, mean = 0, sd = 0.1)
@@ -36,6 +38,7 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
       xi.new <- ixi[i - 1] + rnorm(1, mean = 0, sd = 0.1)
     }
     
+    # compute acceptance probability
     acc.prob <-
       exp(logLikeGEV(mu.new, sigma.new, xi.new) - logLikeGEV(imu[i - 1], isigma[i -
                                                                                   1], ixi[i - 1]))
@@ -48,6 +51,7 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
       acc.prob = 0
     }
     
+    # update parameters
     if (runif(1) < acc.prob) {
       imu[i] = mu.new
       isigma[i] = sigma.new
@@ -60,6 +64,7 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
     }
   }
   
+  # save MCMC iterations to dataframe
   parameters <-
     data.frame(Location = imu,
                Scale = isigma,
