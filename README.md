@@ -1,2 +1,2 @@
 # XSEAr
-On the frequency of extremes seas.
+On the frequency of extreme seas.
