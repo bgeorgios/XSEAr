@@ -1,4 +1,5 @@
 mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
+  
   # return log-likelihood of the 3-parameter GEV distribution
   logLikeGEV <- function(mu, sigma, xi) {
     ll <-
@@ -8,7 +9,6 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
   
   # get number of data values
   n <- length(z)
-  
   # construct empty arrays to store MCMC iterations
   imu <- array(0, sim)
   isigma <- array(0, sim)
@@ -25,6 +25,7 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
   stdxi <- 10
   
   for (i in 2:sim) {
+    
     mu.new <- imu[i - 1] + rnorm(1, mean = 0, sd = 0.1)
     sigma.new <- isigma[i - 1] + rnorm(1, mean = 0, sd = 0.1)
     xi.new <- ixi[i - 1] + rnorm(1, mean = 0, sd = 0.1)
