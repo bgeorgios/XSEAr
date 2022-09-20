@@ -2,4 +2,5 @@ Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-
 
 A prior joint distribution for the parameters is defined as:
 \begin{equation}
+A=3
 \end{equation}
