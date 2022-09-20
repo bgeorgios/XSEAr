@@ -4,4 +4,4 @@ A prior joint distribution for the parameters is postulated as: $f(\mu,\sigma,\x
 
 To propose new values, random walks are used: $\mu_{new}=\mu+\epsilon$ , $\sigma_{new}=\sigma+\epsilon$, $\xi_{new}=\xi+\epsilon$, where $\epsilon$ follows a Gaussian distribution with zero mean and a standard deviation of 0.1.
 
-The proposals and priors can be modified accordingly as per needed.
+The proposals and priors can be modified accordingly, as per needed...
