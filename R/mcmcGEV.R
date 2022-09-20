@@ -48,19 +48,19 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
       acc.prob / dnorm(imu[i - 1], x = 0, sd = stdmu) / dnorm(isigma[i - 1], x = 0, sd = stdsigma) / dnorm(ixi[i -
                                                                                                                  1], x = 0, sd = stdxi)
     if (is.nan(acc.prob)) {
-      acc.prob = 0
+      acc.prob <- 0
     }
     
     # update parameters
     if (runif(1) < acc.prob) {
-      imu[i] = mu.new
-      isigma[i] = sigma.new
-      ixi[i] = xi.new
+      imu[i] <- mu.new
+      isigma[i] <- sigma.new
+      ixi[i] <- xi.new
     }
     else{
-      imu[i] = imu[i - 1]
-      isigma[i] = isigma[i - 1]
-      ixi[i] = ixi[i - 1]
+      imu[i] <- imu[i - 1]
+      isigma[i] <- isigma[i - 1]
+      ixi[i] <- ixi[i - 1]
     }
   }
   
