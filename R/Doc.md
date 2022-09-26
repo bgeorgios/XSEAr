@@ -5,4 +5,4 @@ Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-
 
 ***pwmGEV***:
 
-Function to fit a GEV distribution using the probability weighted moments (PWM). 
+Function to fit a GEV distribution using the probability weighted moments (PWM) method.
