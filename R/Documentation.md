@@ -9,4 +9,4 @@ Function to fit a GEV distribution using the probability weighted moments (PWM) 
 
 ***Boston-surge.csv***:
 
-Annual maxima storm surge values extracted from NOAA (National Oceanic and Atmospheric Administration) tide gauge station at Boston for 99 years. The data can be used to test the functionality of the code posted here.
+Annual maxima storm surge values (m) extracted from NOAA (National Oceanic and Atmospheric Administration) tide gauge station at Boston for 99 years. The data can be used to test the functionality of the code posted here.
