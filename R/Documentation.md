@@ -6,3 +6,7 @@ Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-
 ***pwmGEV.R***:
 
 Function to fit a GEV distribution using the probability weighted moments (PWM) method. An initial guess for shape parameter (xi) is required since it is numerically optimized as a function of the first three sample PWMs.
+
+***Boston-surge.csv***:
+
+Annual maxima storm surge values extracted from NOAA (National Ocean and Atmospheric Administration) Boston tide gauge for 99 years.
