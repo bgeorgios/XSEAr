@@ -1,4 +1,4 @@
-pwmGEV <- function(z, init.xi) {
+pwmGEV <- function(z, init.xi=NULL) {
   # z = numeric vector of data (typically, annual maxima values)
   # init.xi = initial value for xi parameter
   
@@ -6,7 +6,7 @@ pwmGEV <- function(z, init.xi) {
   n <- length(z)
   
   # assign Weibull plotting position for probabilities of non-exceedance
-  pjn <- seq(1, length(z)) / (n + 1)
+  pjn <- (seq(1, length(z)) - 1) / (n)
 
   # compute sample probability-weighted moments (b0, b1, and b2)
   bo <- mean(z)
@@ -21,7 +21,7 @@ pwmGEV <- function(z, init.xi) {
   }
   
   # optimize xi
-  xi <- optim(c(init.xi), compXi)[["value"]]
+  xi <- uniroot(compXi, interval = c(-1, 1))[["root"]]
   
   # compute location and scale parameters
   sigma <- (2 * br - bo) * xi / (gamma(1 + xi) * (1 - 2 ** (-xi)))
