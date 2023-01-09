@@ -17,5 +17,6 @@ Function to fit a tapered Pareto distribution using the Maximum Likelihood Estim
 Annual maxima storm surge values (m) extracted from NOAA (National Oceanic and Atmospheric Administration) tide gauge station at Boston, MA for 99 years.
 
 ***Crescent-tsunami.csv***
+
 Tsunami amplitudes (m) extracted from NGDC/WDS Global Historical Tsunami Database for the tide gauge station at Crescent City, CA. Amplitudes less than 0.1 m that occured prior to 1960 have been filtered out.
 
