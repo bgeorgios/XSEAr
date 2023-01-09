@@ -19,7 +19,7 @@ mleTP <- function(z, init.beta = NULL, init.theta = NULL) {
   mleproc <- optim(c(init.beta, init.theta), logLikeTP)
   
   # put parameters into list
-  parlist <- list("beta" = mleproc[["par"]][1], "theta" = mleproc[["par"]][2])
+  parlist <- list("Beta" = mleproc[["par"]][1], "Theta" = mleproc[["par"]][2])
   
   return(parlist)
 }
