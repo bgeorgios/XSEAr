@@ -4,5 +4,5 @@ XSEAr is a collection of R scripts on the frequency analysis of extreme values w
 ![screen-png](./logo.png)
 
 ## Need Help?
-Need help using XSEAr? Found an issue? Have a feature request? Check out my
+Need help using XSEAr scripts? Found an issue? Have a feature request? Check out my
 [personal blog](http://www.gboumis.com) and contact me via my LinkedIn profile found at the header.
