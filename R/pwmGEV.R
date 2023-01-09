@@ -27,5 +27,5 @@ pwmGEV <- function(z, init.xi=NULL) {
   sigma <- (2 * br - bo) * xi / (gamma(1 + xi) * (1 - 2 ** (-xi)))
   mu <- bo + sigma * (gamma(1 + xi) - 1) / xi
   
-  return(list(mu, sigma, -xi))
+  return(list("Location"=mu, "Scale"=sigma, "Shape"=-xi))
 }
