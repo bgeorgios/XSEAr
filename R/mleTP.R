@@ -6,7 +6,7 @@ mleTP <- function(z, init.beta = NULL, init.theta = NULL) {
   # get lower truncation threshold
   u <- min(z)
   
-  # return tapered Pareto log-likelihood
+  # return Tapered Pareto log-likelihood
   logLikeTP <- function(par) {
     n <- length(z)
     ll <-
