@@ -1,6 +1,10 @@
 
 ***mcmcGEV.R***
 
+Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-Hastings sampling scheme within the context of Bayesian inference for the 2-parameter Tapered Pareto (TP) distribution. A prior joint distribution for the parameters is postulated as: $f(\beta,\theta)=f(\beta)f(\theta)$. Each marginal is a Gaussian distribution with zero mean and a standard deviation of 10 (uninformative priors). To propose new values, random walks are used: $\beta_{new}=\beta+\epsilon$ , $\theta_{new}=\theta+\epsilon$, where $\epsilon$ follows a Gaussian distribution with zero mean and a standard deviation of 0.1. The proposals and priors can be modified accordingly, as per needed.
+
+***mcmcGEV.R***
+
 Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-Hastings sampling scheme within the context of Bayesian inference for the 3-parameter Generalized Extreme Value (GEV) distribution. A prior joint distribution for the parameters is postulated as: $f(\mu,\sigma,\xi)=f(\mu)f(\sigma)f(\xi)$. Each marginal is a Gaussian distribution with zero mean and a standard deviation of 10 (uninformative priors). To propose new values, random walks are used: $\mu_{new}=\mu+\epsilon$ , $\sigma_{new}=\sigma+\epsilon$, $\xi_{new}=\xi+\epsilon$, where $\epsilon$ follows a Gaussian distribution with zero mean and a standard deviation of 0.1. The proposals and priors can be modified accordingly, as per needed.
 
 ***pwmGEV.R***
@@ -10,7 +14,7 @@ Function to fit a GEV distribution using the Probability Weighted Moments (PWM) 
 
 ***mleTP.R***
 
-Function to fit a tapered Pareto distribution using the Maximum Likelihood Estimation (MLE) method. An initial guess for both the lower truncation threshold (beta) and the upper-cutoff (theta) parameters is required since they are numerically optimized.
+Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood Estimation (MLE) method. An initial guess for both the lower truncation threshold (beta) and the upper-cutoff (theta) parameters is required since they are numerically optimized.
 
 ***Boston-surge.csv***
 
