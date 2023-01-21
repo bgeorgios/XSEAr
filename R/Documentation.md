@@ -22,5 +22,5 @@ Annual maxima storm surge values (m) extracted from NOAA (National Oceanic and A
 
 ***Crescent-tsunami.csv***
 
-Tsunami amplitudes (m) extracted from NGDC/WDS Global Historical Tsunami Database for the tide gauge station at Crescent City, CA. Amplitudes less than 0.1 m that occured prior to 1960 have been filtered out.
+Tsunami amplitudes (m) extracted from NGDC/WDS Global Historical Tsunami Database for the tide gauge station at Crescent City, CA. Amplitudes less than or equal to 0.1 m that occured prior to 1960 have been filtered out.
 
