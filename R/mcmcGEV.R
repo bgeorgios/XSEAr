@@ -48,10 +48,10 @@ mcmcGEV <- function(z, init.mu, init.sigma, init.xi, sim = 10000) {
       exp(logLikeGEV(mu.new, sigma.new, xi.new) - logLikeGEV(imu[i - 1], isigma[i -
                                                                                   1], ixi[i - 1]))
     acc.prob <-
-      acc.prob * dnorm(mu.new, x = 0, sd = stdmu) * dnorm(sigma.new, x = 0, sd = stdsigma) * dnorm(xi.new, x = 0, sd = stdxi)
+      acc.prob * dnorm(mu.new, mean = 0, sd = stdmu) * dnorm(sigma.new, mean = 0, sd = stdsigma) * dnorm(xi.new, mean = 0, sd = stdxi)
     acc.prob <-
-      acc.prob / dnorm(imu[i - 1], x = 0, sd = stdmu) / dnorm(isigma[i - 1], x = 0, sd = stdsigma) / dnorm(ixi[i -
-                                                                                                                 1], x = 0, sd = stdxi)
+      acc.prob / dnorm(imu[i - 1], mean = 0, sd = stdmu) / dnorm(isigma[i - 1], mean = 0, sd = stdsigma) / dnorm(ixi[i -
+                                                                                                                 1], mean = 0, sd = stdxi)
     if (is.nan(acc.prob)) {
       acc.prob <- 0
     }
