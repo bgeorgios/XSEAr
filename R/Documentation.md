@@ -14,7 +14,7 @@ Function to fit a GEV distribution using the Probability Weighted Moments (PWM) 
 
 ***mleTP.R***
 
-Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood (ML) estimation method. An initial guess for both the lower truncation threshold (beta) and upper-cutoff (theta) parameters is required since they are numerically optimized.
+Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood (ML) estimation method. An initial guess for both the lower truncation threshold (beta) and upper cutoff (theta) parameters is required since they are numerically optimized.
 
 ***Boston-surge.csv***
 
