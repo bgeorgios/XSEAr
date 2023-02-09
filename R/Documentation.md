@@ -1,7 +1,7 @@
 
 ***mcmcTP.R***
 
-Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-Hastings sampling scheme within the context of Bayesian inference for the 2-parameter Tapered Pareto (TP) distribution. A prior joint distribution for the parameters is postulated as: $f(\beta,\theta)=f(\beta)f(\theta)$. Each marginal is a Gaussian distribution with zero mean and a standard deviation of 10 (uninformative priors). To propose new values, random walks are used: $\beta_{new}=\beta+\epsilon$ , $\theta_{new}=\theta+\epsilon$, where $\epsilon$ follows a Gaussian distribution with zero mean and a standard deviation of 0.1. The proposals and priors can be modified accordingly, as per needed, e.g., Gamma priors can be utlized since both parameters are strictly positive etc.
+Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-Hastings sampling scheme within the context of Bayesian inference for the 2-parameter Tapered Pareto (TP) distribution. A prior joint distribution for the parameters is postulated as: $f(\beta,\theta)=f(\beta)f(\theta)$. Each marginal is a Gaussian distribution with zero mean and a standard deviation of 10 (uninformative priors). To propose new values, random walks are used: $\beta_{new}=\beta+\epsilon$ , $\theta_{new}=\theta+\epsilon$, where $\epsilon$ follows a Gaussian distribution with zero mean and a standard deviation of 0.1. The proposals and priors can be modified accordingly, as per needed, e.g., Gamma priors can be utilized since both parameters are strictly positive etc.
 
 ***mcmcGEV.R***
 
