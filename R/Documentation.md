@@ -16,6 +16,10 @@ Function to fit a GEV distribution using the Probability Weighted Moments (PWM) 
 
 Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood (ML) estimation method. An initial guess for both the lower truncation threshold (beta) and upper cutoff (theta) parameters is required since they are numerically optimized.
 
+***quanticTest.R***
+
+Function to implement a non(stationarity) test for a time series based on quantics. The function returns a boolean (TRUE/FALSE) with TRUE meaning that the time series is stationary.
+
 ***Boston-surge.csv***
 
 Annual maxima storm surge values (m) extracted from NOAA (National Oceanic and Atmospheric Administration) tide gauge station at Boston, MA for 99 years.
