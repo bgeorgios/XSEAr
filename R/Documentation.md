@@ -7,6 +7,8 @@ Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-
 
 Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-Hastings sampling scheme within the context of Bayesian inference for the 3-parameter Generalized Extreme Value (GEV) distribution. A prior joint distribution for the parameters is postulated as: $f(\mu,\sigma,\xi)=f(\mu)f(\sigma)f(\xi)$. Each marginal is a Gaussian distribution with zero mean and a standard deviation of 10 (uninformative priors). To propose new values, random walks are used: $\mu_{new}=\mu+\epsilon$ , $\sigma_{new}=\sigma+\epsilon$, $\xi_{new}=\xi+\epsilon$, where $\epsilon$ follows a Gaussian distribution with zero mean and a standard deviation of 0.1. The proposals and priors can be modified accordingly, as per needed.
 
+**Note**:
+
 ***pwmGEV.R***
 
 Function to fit a GEV distribution using the Probability Weighted Moments (PWM) method. An initial guess for the shape parameter (xi) is required since it is numerically optimized as a function of the first three sample PWMs.
@@ -18,7 +20,9 @@ Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood 
 
 ***quanticTest.R***
 
-Function to implement a (non)stationarity test for a time series based on quantics, as described in Busetti and Harvey (2010). The function returns a boolean (TRUE/FALSE) with TRUE meaning that the time series is stationary. Note that the test is designed for uncorrelated data.
+Function to implement a (non)stationarity test for a time series based on quantics, as described in Busetti and Harvey (2010). The function returns a boolean (TRUE/FALSE) with TRUE meaning that the time series is stationary. 
+
+Note: *that the test is designed for uncorrelated data.*
 
 ***Boston-surge.csv***
 
