@@ -13,10 +13,9 @@ Function to implement a combined Markov Chain Monte Carlo (MCMC) and Metropolis-
 
 Function to fit a GEV distribution using the Probability Weighted Moments (PWM) method. An initial guess for the shape parameter (xi) is required since it is numerically optimized as a function of the first three sample PWMs.
 
-
 ***mleTP.R***
 
-Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood (ML) estimation method. An initial guess for both the lower truncation threshold (beta) and upper cutoff (theta) parameters is required since they are numerically optimized.
+Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood (ML) estimation method. An initial guess for both the shape (beta) and upper cutoff (theta) parameters is required since they are numerically optimized.
 
 ***quanticTest.R***
 
