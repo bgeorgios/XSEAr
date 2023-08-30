@@ -25,7 +25,7 @@ Function to implement a (non)stationarity test for a time series based on quanti
 
 ***Boston-surge.csv***
 
-Annual maxima storm surge values (m) extracted from NOAA (National Oceanic and Atmospheric Administration) tide gauge station at Boston, MA for 99 years.
+Annual maxima storm surge values (m) extracted from NOAA (National Oceanic and Atmospheric Administration) tide gauge station at Boston, MA, for 99 years.
 
 ***Crescent-tsunami.csv***
 
