@@ -6,7 +6,7 @@ pwmGEV <- function(z, init.xi=NULL) {
   n <- length(z)
   
   # assign Weibull plotting position for probabilities of non-exceedance
-  pjn <- seq(1, length(z)) / (n+1)
+  pjn <- seq(1, length(z)) / (n + 1)
 
   # compute sample probability-weighted moments (b0, b1, and b2)
   bo <- mean(z)
