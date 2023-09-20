@@ -19,7 +19,7 @@ Function to fit a Tapered Pareto (TP) distribution using the Maximum Likelihood 
 
 ***quanticTest.R***
 
-Function to implement a (non)stationarity test for a time series based on quantile indicators, i.e., *quantics*. This test is described in **Busetti and Harvey (2010)**. The function returns a boolean (TRUE/FALSE) with TRUE meaning that the time series is stationary. 
+Function to implement a (non-)stationarity test for a time series based on quantile indicators, i.e., *quantics*. This test is described in **Busetti and Harvey (2010)**. The function returns a boolean (TRUE/FALSE) with TRUE meaning that the time series is stationary. 
 
 **Note:** The test above is designed for data with no autocorrelation.
 
